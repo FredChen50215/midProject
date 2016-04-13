@@ -11,9 +11,29 @@ header {
 a {
   text-decoration: none;
 }
-ul.ul-nav{
+.ul-nav{
   margin: 0;
   margin-left: -40px;
+}
+.li-nav {
+  font-family:Calibri,Arial,微軟正黑體, sans-serif;
+  font-size: 20px;
+  list-style: none;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: 50px;
+  /*border: 2px solid;
+  border-radius: 5px;
+  border-color: white;*/
+}
+.nav:hover{
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+.nav:active{
+  color: black;
 }
 article{
   min-height: 500px;
@@ -33,29 +53,20 @@ footer{
 .div-li{
   height: 100%;
   float: left;
+  color: white;
 }
-
 .div-li:hover{
-    background-color: black;
+  background-color: black;
+}
+.div-li:active{
+  background-color: white;
+  color: black;
 }
 .clear {
   clear: both;
 }
 /* p */
 
-.nav {
-  font-family:Calibri,Arial,微軟正黑體, sans-serif;
-  color: white;
-  font-size: 20px;
-  list-style: none;
-  display: inline;
-  margin-left: 10px;
-  margin-right: 10px;
-  line-height: 50px;
-  /*border: 2px solid;
-  border-radius: 5px;
-  border-color: white;*/
-}
 
 /* span */
 
