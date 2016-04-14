@@ -20,12 +20,9 @@ a {
   font-size: 20px;
   list-style: none;
   display: inline;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
   line-height: 50px;
-  /*border: 2px solid;
-  border-radius: 5px;
-  border-color: white;*/
 }
 .nav:hover{
   position: relative;
@@ -37,6 +34,8 @@ a {
 }
 article{
   min-height: 500px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 footer{
   background-color: black;
