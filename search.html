@@ -5,13 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=0">
   <link rel="stylesheet" href="css/search.css" />
-  <script src="js/jquery.js"></script>
 </head>
 
 <body>
-<form action="/search.html" class="search-wrapper cf">
-        <input type="text" placeholder="Search here..." required="">
-        <button type="submit">Search</button>
-</form>
+  <div id="search">
+    <form action="javascript:void(0);" method="GET">
+      <fieldset class="clearfix">
+        <input type="search" name="search" value="請輸入要尋找的活動?" onBlur="if(this.value=='')this.value='請輸入要尋找的活動?'" onFocus="if(this.value=='請輸入要尋找的活動?')this.value='' "> <!-- JS because of IE support; better: placeholder="What are you looking for?" -->
+        <input type="submit" value="Search" class="button">
+      </fieldset>
+    </form>
+    </div>
+    <div class="searchResult">
+  </div>
+  <script src="js/jquery.js"></script>
 </body>
 </html>
