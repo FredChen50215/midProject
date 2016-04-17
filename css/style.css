@@ -6,7 +6,7 @@ body {
 header {
   width: 100%;
   height:100px;
-  background-color: black;
+  background-color: #336699;
 }
 a {
   text-decoration: none;
@@ -16,7 +16,7 @@ a {
   margin-left: -40px;
 }
 .li-nav {
-  font-family:Calibri,Arial,微軟正黑體, sans-serif;
+  font-family:Segoe UI,Arial,微軟正黑體, sans-serif;
   font-size: 20px;
   list-style: none;
   display: inline;
@@ -36,9 +36,10 @@ article{
   min-height: 500px;
   padding-left: 2%;
   padding-right: 2%;
+  margin-bottom: 20px;
 }
 footer{
-  background-color: black;
+  background-color: #336699;
   text-align: center;
   height: 40px;
 }
@@ -55,7 +56,7 @@ footer{
   color: white;
 }
 .div-li:hover{
-  background-color: black;
+  background-color: #336699;
 }
 .div-li:active{
   background-color: white;
