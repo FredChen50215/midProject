@@ -2,17 +2,17 @@
 			$('.article').load('info.html');
 	});
 	$(document).ready(function(){
-		$('#li-myCalendar').click(function(){
+		$('#div-li-myCalendar').click(function(){
 			$('.article').load('myCalendar.html');
 		});
 	});
 	$(document).ready(function(){
-		$('#li-search').click(function(){
+		$('#div-li-search').click(function(){
 			$('.article').load('search.html');
 		});
 	});
   $(document).ready(function(){
-		$('#li-setting').click(function(){
+		$('#div-li-setting').click(function(){
 			$('.article').load('setting.html');
 		});
 	});
