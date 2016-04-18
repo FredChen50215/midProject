@@ -98,13 +98,39 @@ input[type="search"]::-webkit-search-decoration {
 #search input[type="search"]:-ms-input-placeholder { color: #42454e; }
 
 /* 以上為網路上source*/
-
-
+/* tags */
+ol.ol-searchResult{
+	margin: 0px;
+}
+hr{
+	margin: 0;
+}
 /* div */
-.searchResult{
+.searchResultList{
 	margin-top: 20px;
 	background-color: #0099CC;
 	opacity: 0.6;
 	border-radius: 5px;
-	min-height: 50px;
+	padding-top:5px;
+	padding-bottom: 5px;
+	box-sizing: border-box;
+}
+.div-searchResult{
+	min-height: 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* span */
+.span-searchResult-title{
+	font-family:Calibri, 微軟正黑體, sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+}
+.span-searchResult-detail{
+	font-family:Calibri, 微軟正黑體, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	background-color: white;
+	border-radius: 2px;
 }
