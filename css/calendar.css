@@ -340,14 +340,14 @@
 .event-warning {
   background-color: #e3bc08;
 }
-.event-inverse {
+.event-csie {
   background-color: #1b1b1b;
 }
 .event-success {
   background-color: #006400;
 }
-.event-special {
-  background-color: #800080;
+.event-ntut {
+  background-color: #FF0033;
 }
 .day-highlight:hover,
 .day-highlight {
