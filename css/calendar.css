@@ -484,9 +484,7 @@ span[data-cal-date]:hover {
 #cal-slide-content {
   padding: 20px;
   color: #ffffff;
-  background-color: #336699;
-  /*-webkit-box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.5);*/
+  background-color: #0099FF;
 }
 #cal-slide-tick {
   background-image: url("../images/tick.png?2");
