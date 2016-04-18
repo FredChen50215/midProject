@@ -1,3 +1,10 @@
+
+$(document).ready(function(){
+	$('#modalBtn').click(function(){
+		$('.modal-content').load('newEvent.html');
+	});
+});
+
 (function($) {
 
 	"use strict";
