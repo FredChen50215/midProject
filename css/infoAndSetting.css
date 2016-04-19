@@ -176,6 +176,7 @@ hr{
 /* img */
 .img-feature{
   width: 25vw;
+	height: 25vw;
   border-radius: 50%;
 }
 .img-feature:hover{
