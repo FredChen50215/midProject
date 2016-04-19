@@ -97,6 +97,11 @@ input[type="search"]::-webkit-search-decoration {
 #search input[type="search"]::-webkit-input-placeholder { color: #42454e; }
 #search input[type="search"]:-moz-placeholder { color: #42454e; }
 #search input[type="search"]:-ms-input-placeholder { color: #42454e; }
+
+hr{
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
 /* div */
 
 .titleBlock-info{
@@ -145,6 +150,11 @@ input[type="search"]::-webkit-search-decoration {
   font-family:Calibri,微軟正黑體, sans-serif;
   font-size: 25px;
   line-height: 1.5em;
+  color: #505050;
+}
+.span-smallTitle{
+	font-family:Calibri,微軟正黑體, sans-serif;
+	font-size: 20px;
   color: #505050;
 }
 .text{
