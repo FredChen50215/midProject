@@ -759,7 +759,6 @@ if(!String.prototype.formatNum) {
 		this._init_position();
 		this._loadEvents();
 		this._render();
-
 		this.options.onAfterViewLoad.call(this, this.options.view);
 	};
 
@@ -947,6 +946,22 @@ if(!String.prototype.formatNum) {
 		this.options.onBeforeEventsLoad.call(this, function() {
 			if (!self.options.events.length || !self.options.events_cache) {
 				self.options.events = loader();
+				// ---------------------------------------------------------------------------
+				// 如果現在的view在year，就把相同ID的拿掉，只保留第一個
+				if (self.options.view == 'year') {
+					var title_list = [];
+					for(var i = 0; i < self.options.events.length; ++i) {
+						var event = self.options.events[i];
+						if (title_list.indexOf(event.title) == -1) {
+							title_list.push(event.title);
+						} else {
+							self.options.events.splice(i, 1);
+							console.log(self.options.events);
+							--i;
+						}
+					}
+				}
+				// ----------------------------------------------------------------------------
 				self.options.events.sort(function (a, b) {
 					var delta;
 					delta = a.start - b.start;
@@ -1052,6 +1067,7 @@ if(!String.prototype.formatNum) {
 					.off('hidden.bs.modal')
 					.on('show.bs.modal', function() {
 						var modal_body = $(this).find('.modal-body');
+						console.log(self.options.modal_type, modal_body);
 						switch(self.options.modal_type) {
 							case "iframe" :
 								var height = modal_body.height() - parseInt(modal_body.css('padding-top'), 10) - parseInt(modal_body.css('padding-bottom'), 10);
@@ -1062,6 +1078,7 @@ if(!String.prototype.formatNum) {
 								$.ajax({
 									url: url, dataType: "html", async: false, success: function(data) {
 										modal_body.html(data);
+
 									}
 								});
 								break;
@@ -1069,6 +1086,7 @@ if(!String.prototype.formatNum) {
 							case "template":
 								self._loadTemplate("modal");
 								//	also serve calendar instance to underscore template to be able to access current language strings
+								console.log(event, self);
 								modal_body.html(self.options.templates["modal"]({"event": event, "calendar": self}))
 								break;
 						}

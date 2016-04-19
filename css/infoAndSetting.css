@@ -97,11 +97,6 @@ input[type="search"]::-webkit-search-decoration {
 #search input[type="search"]::-webkit-input-placeholder { color: #42454e; }
 #search input[type="search"]:-moz-placeholder { color: #42454e; }
 #search input[type="search"]:-ms-input-placeholder { color: #42454e; }
-
-hr{
-	margin-top: 10px;
-	margin-bottom: 30px;
-}
 /* div */
 
 .titleBlock-info{
@@ -121,6 +116,7 @@ hr{
 }
 .block{
   width: 100%;
+  height: 400px;
   padding-top: 30px;
   padding-bottom: 30px;
   box-sizing: border-box;
@@ -130,7 +126,6 @@ hr{
   width: 28%;
   height: 100%;
   margin-left: 4%;
-	margin-bottom: 20px;
   text-align: center;
 }
 .div-calendars{
@@ -152,11 +147,6 @@ hr{
   line-height: 1.5em;
   color: #505050;
 }
-.span-smallTitle{
-	font-family:Calibri,微軟正黑體, sans-serif;
-	font-size: 20px;
-  color: #505050;
-}
 .text{
   font-family:Calibri,微軟正黑體, sans-serif;
   color: #505050;
@@ -175,8 +165,8 @@ hr{
 
 /* img */
 .img-feature{
-  width: 25vw;
-	height: 25vw;
+  width: 80%;
+  height: 80%;
   border-radius: 50%;
 }
 .img-feature:hover{

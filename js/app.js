@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 	$('#modalBtn').click(function(){
-		$('.modal-content').load('newEvent.html');
+		$('#modal_conent').load('newEvent.html');
 	});
 });
 
@@ -15,6 +15,7 @@ $(document).ready(function(){
 		tmpl_path: 'tmpls/',
 		tmpl_cache: false,
 		day: 'now',
+		modal: '#events-modal',
 		onAfterEventsLoad: function(events) {
 			if(!events) {
 				return;
@@ -68,10 +69,6 @@ $(document).ready(function(){
 		calendar.view();
 	});
 
-	$('#events-in-modal').change(function(){
-		var val = $(this).is(':checked') ? $(this).val() : null;
-		calendar.setOptions({modal: val});
-	});
 	$('#format-12-hours').change(function(){
 		var val = $(this).is(':checked') ? true : false;
 		calendar.setOptions({format12: val});
@@ -86,9 +83,5 @@ $(document).ready(function(){
 		var val = $(this).is(':checked') ? true : false;
 		calendar.setOptions({weekbox: val});
 		calendar.view();
-	});
-	$('#events-modal .modal-header, #events-modal .modal-footer').click(function(e){
-		//e.preventDefault();
-		//e.stopPropagation();
 	});
 }(jQuery));
